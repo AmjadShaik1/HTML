@@ -1,0 +1,70 @@
+<!--  example on div tag
+		display:grid;   it displaying ele in rows & cols format
+		grid-cloumn-count:auto auto auto;
+												for ex: 1000px -> 3cols => 333.33 each col
+										:300px 500px 400px;	
+										:30%  30% 40%;
+												for ex:  1000px -> 30% => 300px - col1
+													   -> 30%  => 300px - col2
+													   -> 40%  => 400px - col3
+										:300px 200px auto;
+												for ex:  1000px -> 300px - col1
+																		   -> 200px - col2
+																		   -> 500px - col3
+										:auto 30% 500px;
+												for ex:  1000px -> 200px - col1 auto
+																		   -> 300px - col2
+																		   -> 500px - col3
+
+		row-gap: Npx;  it provides space between row to row
+		column-gap: Npx;  it provides space between col to col
+		grid-gap:Npx;  it provides space both sides (row-row & col-col)
+
+	Note: should be applied on outer tags only
+   -->
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ex25</title>
+		<link rel="icon" href="logo.png">
+	</head>
+	<body> 
+		<div style="display:grid; grid-template-columns:30% 40% 30%; grid-gap:20px; background-color:black;">	<!-- main div -->
+			<div style="background-color:#3300ff;">		<!-- sub div -->
+				<h1>Box1</h1>
+			</div> 	
+			<div style="background-color:#33cc00;">
+				<h1>Box2</h1>
+			</div> 	
+			<div style="background-color:#ffff00;;">
+				<h1>Box3</h1>
+			</div> 	
+			<div style="background-color:#990000;">
+				<h1>Box4</h1>
+			</div> 
+			<div style="background-color:#3300ff;">		<!-- sub div -->
+				<h1>Box5</h1>
+			</div> 	
+			<div style="background-color:#33cc00;">
+				<h1>Box6</h1>
+			</div> 	
+			<div style="background-color:#ffff00;;">
+				<h1>Box7</h1>
+			</div> 	
+			<div style="background-color:#990000;">
+				<h1>Box8</h1>
+			</div> 	 
+			<div style="background-color:#3300ff;">		<!-- sub div -->
+				<h1>Box9</h1>
+			</div> 	
+	
+		</div>
+	</body>
+</html>
+
+
+	
+
+
+
+

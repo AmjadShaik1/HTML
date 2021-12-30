@@ -1,0 +1,99 @@
+<!--  example on css tables  
+		pseudo selector => predefine selectors, pseudo selector start with : symbol
+		:hover
+		:nth-child()  => used to apply styles on nth positioned tag
+									Syn:			:nth-child(N)
+															N -> tag number/position
+															even -> all even tags
+															odd -> all odd tags
+		:first-child => used to apply styles on 1st child tag
+								:first-child{
+										......
+								}
+		:last-child => used to apply styles on last child tag
+								:last-child{
+										......
+								}
+	Note: these 3 we can apply on child/sub tags only
+
+	border-collapse ==> it removes internal border of a table (removes gap between row-row & col-col)
+
+	border-botton ==> it draws a line/border only bottom of tag
+						Syn:		border-bottom:T S C;
+	border-top ==> it draws a line/border only top of tag
+						Syn:		border-top:T S C;
+	border-left ==> it draws a line/border only left side of tag
+						Syn:		border-left:T S C;
+	border-right ==> it draws a line/border only right side of tag
+						Syn:		border-right:T S C;
+
+	border ==> it draws a line/borde all sides of tag
+						Syn:		border:T S C;
+-->
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ex31</title>
+		<link rel="icon" href="logo.png">
+		<style>
+			table{
+				width:450px;
+				border-collapse:collapse;
+			}
+			tr{
+				border-top:2px solid #ff00ff;
+			}
+			tr:nth-child(odd){
+					background-color:#ffff99;
+			} 
+			tr:nth-child(even){
+					background-color:#66ff99;
+			} 
+			tr:first-child{
+				background-color:#3300ff;
+				color:white;					
+			}
+			tr:hover{
+				background:red;
+				color:white;
+			}
+ 
+		</style>
+	</head>
+	<body> 
+		<h2>demo on tables</h2>
+		<table   align="center">
+			<caption>Super 12 Group 2</caption>
+			<tr>
+				<th>Rank</th> <th>Team</th> <th>Mat</th> <th>Won</th>
+				<th>	Lost</th> <th>Pts</th> <th>NRR</th>
+			</tr>
+			<tr>
+				<td>1</td> <td>India</td> <td>5</td> <td>5</td> <td>0</td> <td>11</td> 
+				<td>	+1.73</td>
+			</tr>
+			<tr>
+				<td>2</td> <td>Pakistan</td> <td>4</td> <td>4	</td> <td>0</td> <td>8</td> 
+				<td>	+1.065	</td>
+			</tr>
+			<tr>
+				<td>2</td> <td>Afghanistan</td> <td>4</td> <td>2</td> <td>2</td> <td>4</td> 
+				<td>	+1.481	</td>
+			</tr>
+			<tr>
+				<td>3</td> <td>New Zealand</td> <td>3</td> <td>2</td> <td>1</td> <td>4</td> 
+				<td>	+0.816	</td>
+			</tr>
+			<tr>
+				<td>3</td> <td>Namibia	</td> <td>3</td> <td>1</td> <td>2</td> <td>2</td> 
+				<td>	-1.600</td>
+			</tr>
+			<tr>
+				<td>3</td> <td>Scotland</td> <td>3</td> <td>0</td> <td>3</td> <td>0</td> 
+				<td>	-2.645</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+

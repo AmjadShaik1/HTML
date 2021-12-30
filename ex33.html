@@ -1,0 +1,32 @@
+<!--  example on "input" tag  -->
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ex33</title>
+		<link rel="icon" href="logo.png">
+	</head>
+	<body> 
+		<h2>demo on text fileds</h2>
+		<input />
+		<input type="text" autofocus/> <br>		<!-- cursor position -->
+		<input type="text" id="tf1" name="t1"/> <br>
+		<!-- to set data limit (no.of chars) -->
+		<input type="text" id="tf2" name="t2" maxlength="10"/> <br>
+		<!-- to set size of text field  -->
+		<input type="text" id="tf3" name="t3" size="50"/> <br>
+		<!-- to set prompting text -->
+		<input type="text" id="tf4" name="tf4" placeholder="enter phone number" /> <br>
+		<!-- to setting default value -->
+		<input type="text" id="tf5" name="tf5" value="1200" /> <br>
+		<!-- to setting readonly -->
+		<input type="text" id="tf6" name="tf6" value="3200" readonly/> <br>
+		<!-- css settings -->
+		<input type="text" id="tf7" name="tf7" style="color:#3300ff; font-size:20px;"/> <br>
+	</body>
+</html>
+ <!--
+		JS:
+			var = tf1.value
+
+		Servlet:
+			var=request.getParameter("t1")		-->

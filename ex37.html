@@ -1,0 +1,28 @@
+<!--  example on "input" tag  -->
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ex37</title>
+		<link rel="icon" href="logo.png">
+	</head>
+	<body>    
+		<h2>demo on button fields </h2>
+		<input type="button" id="b1" value="Apply" onclick="alert('Hello world')"/> <br>
+		<br>
+		<input type="text" id="tn" placeholder="enter table number"/>
+		<input type="button" id="b2" value="Print table" onclick="printTable()"/> <br>
+		<script>
+			function printTable()
+			{
+				let n = tn.value;
+				for(i=1; i<=20; i++)
+				{
+					r=n*i;
+					document.write(n+"*"+i+"="+r+"<br>");
+				}
+			}
+		</script>
+	 
+	</body>
+</html>
+ 
